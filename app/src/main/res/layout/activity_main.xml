@@ -71,15 +71,16 @@
         tools:visibility="visible" />
 
 
-
     <TextView
         android:id="@+id/txtRegister1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
         android:text="¿No estas registrado?"
         android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtRegister2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
@@ -87,14 +88,16 @@
         android:id="@+id/txtRegister2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="104dp"
+        android:clickable="true"
         android:text="Registrate Aqui"
         android:textColor="#773DF4"
         android:textSize="12sp"
         android:textStyle="bold"
-        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtRegister1"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
     <TextView
@@ -111,5 +114,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
